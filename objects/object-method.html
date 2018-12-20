@@ -1,0 +1,46 @@
+<html>
+    <title>Object Method</title>
+    <body>
+        <script>
+        let restaurant = {
+            name: 'Kababjees',
+            guestcapacity: 150,
+            guestcount: 10,
+            checkAvailability: function(partysize){
+                let seatsleft = this.guestcapacity - this.guestcount
+                return partysize <= seatsleft
+                },
+            seatparty: function(partysize){
+                this.guestcount = this.guestcount + partysize
+            },
+            removeparty: function(partysize){
+                this.guestcount = this.guestcount - partysize
+            }    
+        }
+        restaurant.seatparty(147)
+        alert(restaurant.checkAvailability(4))
+        restaurant.removeparty(5)
+        alert(restaurant.checkAvailability(4))
+       //let status =  restaurant.checkAvailability(110)
+        //alert(status)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html>
+    <title>Number Method</title>
+    <body>
+        <script>
+        let num  = 129.846
+        alert(num.toFixed(2))
+
+           // round of method
+
+           alert(Math.round(num))
+           alert(Math.floor(num))
+           alert(Math.ceil(num)) 
+
+           // ramdom number
+           let max = 1
+           let min = 0
+           let randomNum = Math.floor(Math.random() * (max - min + 1)) + min
+           alert(randomNum)
+
+           //challenge 
+           let makeguess = function(numb){
+               let min = 1
+               let max = 5
+               let randomnum = Math.floor(Math.ramdom() * (max - min + 1)) + min
+                   return numb === randomnum
+                }
+
+                alert(makeguess(4))
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+    </body>
+</html>

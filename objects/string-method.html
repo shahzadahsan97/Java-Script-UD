@@ -1,0 +1,52 @@
+<html>
+    <title>String Method</title>
+    <body>
+        <script>
+
+        //length property
+        let name = ' Shahzad Ahsan '
+        alert(name.length)        
+        
+        //convert to upper case
+        alert(name.toUpperCase())
+
+        //convert to lower case
+        alert(name.toLowerCase())
+
+        // include method
+        let password = 'abc123password098'
+        alert(password.includes('123'))
+
+        // trim method
+        alert(name.trim())
+
+        let isvalidpassword = function(pass){
+            if (pass.length > 8 && !pass.includes('password')){
+                return true
+            }else {
+                return false 
+            }
+        }
+
+        alert(isvalidpassword('passwordbcdef123'))
+        alert(isvalidpassword('eh$y@8*ij8&'))
+        alert(isvalidpassword('abc123password876'))
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+    </body>
+</html>

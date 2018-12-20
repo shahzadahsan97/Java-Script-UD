@@ -3,8 +3,8 @@
     <body>
         <script>
         
-        let grade = function(studentscore,totalpossiblescore){
-            let percentage = (studentscore/totalpossiblescore)*100
+        const grade = function(studentscore,totalpossiblescore){
+            const percentage = (studentscore/totalpossiblescore)*100
             if (percentage>90 && percentage<=100){
                 return `Your percentage is ${percentage}% and your grade is A`
             }
@@ -22,7 +22,7 @@
             }
                 }
                 
-             let result = grade(1,20)
+             const result = grade(1,20)
              alert(result)
 
 

@@ -1,0 +1,58 @@
+<html>
+    <title>Object Function</title>
+    <body>
+        <script>
+        let mybook = {
+            title: 'Payar Chana dy',
+            author: 'Anjum Shahzad',
+            episode: 30
+        }
+        
+        let newbook = {
+            title: 'Mera naam Yousuf hai',
+            author: 'Asad',
+            episode: 20
+        }
+        
+        let drama = function(book){
+            return {
+                summary: `${book.title} by ${book.author}`,
+                pagecountsummary: `${book.title} is ${book.episode} episode.`
+
+            }
+        }
+
+         let drama1 = drama(mybook)
+          let drama2 = drama(newbook)
+
+          alert(drama1.summary)
+          alert(drama2.pagecountsummary) 
+
+          //challenge area
+
+          //let temp = function(fahrenheit){
+            //  return {
+              //    fahrenheit: fahrenheit,
+                 // kelvin: (fahrenheit+459.67)*(5/9),
+                  //celsius: (fahrenheit-32) (*5/9),
+              //}
+
+              //let temps = temp(74)
+              //alert(temps)
+
+              
+
+
+          } 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+    </body>
+</html>
