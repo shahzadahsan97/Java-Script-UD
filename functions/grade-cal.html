@@ -1,0 +1,52 @@
+<html>
+    <title>grade calculator</title>
+    <body>
+        <script>
+        
+        let grade = function(studentscore,totalpossiblescore){
+            let percentage = (studentscore/totalpossiblescore)*100
+            if (percentage>90 && percentage<=100){
+                return `Your percentage is ${percentage}% and your grade is A`
+            }
+            else if(percentage>80 && percentage<=89){
+                return `Your percentage is ${percentage}% and your grade is B`
+            }
+            else if (percentage>70 && percentage<=79){
+                return `Your percentage is ${percentage}% and your grade is C`
+            }
+            else if (percentage>60 && percentage<=69){
+                return `Your percentage is ${percentage}% and your grade is D `
+            }
+            else {
+                alert('Sorry! You are fail')
+            }
+                }
+                
+             let result = grade(1,20)
+             alert(result)
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+    </body>
+</html>

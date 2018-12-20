@@ -1,0 +1,37 @@
+<html>
+    <title>Arguments</title>
+    <body>
+        <script>
+        //multiple arguments
+        let sum = function(a,b,c){
+            return a + b + c
+        }
+        
+        let result = sum(10,5,3)
+        alert(result)        
+        
+        
+        //default argument
+        let getscore = function(name= 'ahsan',score = 23){
+            return 'Name: ' + name + ' - Score: ' + score
+
+        }
+        
+        let score = getscore(undefined , 87)
+        alert(score)
+
+
+        //challenge area
+        let restaurant = function(total , tip = 0.5){
+           return total * tip
+        }
+
+        let bill = restaurant(100)
+        alert(bill)
+
+
+
+        
+        </script>
+    </body>
+</html>

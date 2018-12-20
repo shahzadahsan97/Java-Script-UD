@@ -1,0 +1,39 @@
+<html>
+    <title>template string</title>
+    <body>
+        <script>
+        let name = 'shahzad'
+        let age = 20
+        alert(`hey! my name is ${name} and my age is ${age}`)
+
+
+        let score = function(fname , yourage){
+            return `Name: ${fname} - Age: ${yourage}`
+    
+        }
+
+        let game = score('ahsan',20)
+        alert(game)
+        
+    //`` it is on the left side of the 1
+
+       //challnge area
+
+        let restaurant = function(total , tippercent = 0.2){
+            let per = tippercent * 100
+            let tip = total * tippercent
+            return `A ${per}% tip on ${total} would be ${tip}`
+        } 
+        
+        let res = restaurant(70)
+        alert(res)
+        
+        
+        
+        
+        
+        
+        
+        </script>
+    </body>
+</html>
